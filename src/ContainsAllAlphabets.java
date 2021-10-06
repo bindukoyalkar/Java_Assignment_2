@@ -16,11 +16,8 @@ public class ContainsAllAlphabets {
             if('a'<=letter && letter<='z')
                 lowerCaseLettersSet.add(letter);
         }
-        if(lowerCaseLettersSet.size()==26)
-            return true;
-        else
-            return false;
+        return lowerCaseLettersSet.size()==26;
     }
 }
-// space complexity O(n)
+// space complexity O(1)
 // time complexity O(n)
